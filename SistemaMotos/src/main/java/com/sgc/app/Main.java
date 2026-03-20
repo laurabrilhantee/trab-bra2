@@ -20,11 +20,22 @@ public class Main {
             scanner.nextLine(); // limpar buffer
 
             switch (opcao) {
-                case 1 -> cadastrarMoto();
-                case 2 -> listarMotos();
-                case 3 -> buscarMoto();
-                case 0 -> executando = false;
-                default -> System.out.println("Opção inválida!");
+                case 1:
+                    cadastrarMoto();
+                    break;
+                case 2: 
+                    listarMotos();
+                    break;
+                case 3:
+                    buscarMoto();
+                    break;
+                case 0: 
+                    executando = false;
+                    System.out.println("Encerrando o programa...");
+                    break;
+                default:
+                    System.out.println("Opção inválida!");
+                    break;
             }
         }
 
